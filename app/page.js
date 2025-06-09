@@ -44,12 +44,12 @@ export default function Home() {
           <header className="font-bold text-sm">About us</header>
           <ol className="text-xs">
             <li>
-              <a className="hover:text-orange-300" href="/">
+              <a className="hover:text-orange-300" href="https://weeklygazette.substack.com/about">
                 The team
               </a>
             </li>
             <li>
-              <a className="hover:text-orange-300" href="/">
+              <a className="hover:text-orange-300" href="https://weeklygazette.substack.com/about">
                 Support our journalism
               </a>
             </li>
