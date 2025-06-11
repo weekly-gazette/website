@@ -44,7 +44,7 @@ export default function Home() {
             <ol className="text-xl">
               <li>
                 <a className="hover:text-orange-300" href="https://weeklygazette.substack.com/about">
-                  The team
+                  Our mission
                 </a>
               </li>
               <li>
