@@ -1,6 +1,10 @@
 export default function Home() {
   const articles = ([
     {
+      title: "Jordan's Black Refugees",
+      link: "https://weeklygazette.substack.com/p/jordans-black-refugees",
+    },
+    {
       title: "Jews in Syria",
       link: "https://weeklygazette.substack.com/p/jews-in-syria"
     },
