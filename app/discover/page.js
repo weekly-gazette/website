@@ -4,7 +4,7 @@ import journalists from "@/constants/journalists";
 
 export default function Page() {
     return (
-        <div className="overflow-hidden">
+        <>
             <div className="fixed grid grid-cols-2 w-[3500px] h-[100vh]">
                 <div className="grid grid-cols-5 infinite-scroll h-[100vh] py-15 gap-y-15">
                     {journalists.slice(0, 10).map((journalist) => (
@@ -29,11 +29,11 @@ export default function Page() {
                     ))}
                 </div>
             </div>
-            <div className="flex flex-col p-10 font-[family-name:var(--font-geist-sans)] justify-center items-center h-lvh">
+            <div className="overflow-hidden h-full flex justify-center items-center">
                 <div className="z-10">
-                    <Wizard />
+                    <Wizard/>
                 </div>
             </div>
-        </div>
+        </>
     );
 }

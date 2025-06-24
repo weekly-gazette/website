@@ -7,6 +7,7 @@ import journalists from "@/constants/journalists";
 import Error from "@/components/error";
 import { useState } from "react";
 import flags from "@/constants/flags";
+import Text from "@/components/text";
 
 const uniqueRegions = Array.from(
     journalists.reduce((acc, curr) => acc.add(curr.region), new Set())
@@ -23,6 +24,12 @@ export default function WizardSearch() {
             </Card.Header>
             <Card.Body>
                 {error && <Error>Choose a few regions!</Error>}
+                <div className="pb-3">
+                    <Text paragraph>
+                        Pick a few regions that you are interested in learning about.
+                        As more people contribute reporters, the more countries there will be.
+                    </Text>
+                </div>
                 <div className="flex flex-wrap justify-center gap-2">
                     {uniqueRegions.map((region) => (
                         <div

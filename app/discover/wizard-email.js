@@ -37,7 +37,7 @@ export default function WizardEmail() {
                             {errors.email && <Error>Enter your email.</Error>}
                             <div className="pb-4">
                                 <Text paragraph>
-                                    Enter your email to get updated when new journalists are added to the platform
+                                    Enter your email to get updated when new journalists are added to the platform.
                                 </Text>
                             </div>
                             <Field
