@@ -31,7 +31,7 @@ export default function WizardContribute() {
                             <div className="pb-4">
                                 <Text paragraph>
                                     Add the names or handles of less well-known journalists you follow on social media (optional).
-                                    We'll add them to the site after quickly verifying them on our end.
+                                    We&apos;ll add them to the site after quickly verifying them on our end.
                                 </Text>
                             </div>
                             <Field

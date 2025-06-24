@@ -19,7 +19,7 @@ export default function WizardSearch() {
     return (
         <Card>
             <Card.Header>
-                I'm interested in:
+                I&apos;m interested in:
             </Card.Header>
             <Card.Body>
                 {error && <Error>Choose a few regions!</Error>}

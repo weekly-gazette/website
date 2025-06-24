@@ -11,7 +11,7 @@ export default function WizardShare() {
             </Card.Header>
             <Card.Body>
                 <Text paragraph>
-                    Click to see the wall of journalists you've helped assemble.
+                    Click to see the wall of journalists you&apos;ve helped assemble.
                     Repost this to help more people find journalists!
                 </Text>
             </Card.Body>
