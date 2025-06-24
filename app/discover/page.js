@@ -10,7 +10,7 @@ export default function Page() {
                     {journalists.slice(0, 10).map((journalist) => (
                         <Image
                             rounded
-                            className="grayscale opacity-50 relative w-[300px] h-full"
+                            className="grayscale opacity-75 relative w-[300px] h-full"
                             src={journalist.image}
                             key={journalist.name}
                             alt={journalist.name}
@@ -21,7 +21,7 @@ export default function Page() {
                     {journalists.slice(0, 10).map((journalist) => (
                         <Image
                             rounded
-                            className="grayscale opacity-50 relative w-[300px] h-full"
+                            className="grayscale opacity-75 relative w-[300px] h-full"
                             src={journalist.image}
                             key={journalist.name}
                             alt={journalist.name}
