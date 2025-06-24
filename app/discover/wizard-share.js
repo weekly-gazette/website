@@ -7,7 +7,7 @@ export default function WizardShare() {
     return (
         <Card>
             <Card.Header>
-                You're on the list!
+                You&apos;re on the list!
             </Card.Header>
             <Card.Body>
                 <Text paragraph>
