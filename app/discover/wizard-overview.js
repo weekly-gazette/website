@@ -14,9 +14,14 @@ export default function WizardOverview() {
             </Card.Header>
             <Card.Body>
                 <Text paragraph>
-                    We have access to the same big news outlets: the New York Times, BBC, Al Jazeera, and so on.
-                    Their reporting has limits. Most people have done the individual work of researching independent, on-the-ground journalists,
-                    but there’s no place where they’re shared. Social media is good but hard to find journalists based on location.
+                    Think of this as a collaborative collage of citizen reporters from around the world
+                    who don&apos;t necessarily have a huge audience.
+                    <br/>
+                    <br/>
+                    Many people follow journalists from places like Gaza or Khartoum
+                    on social media, but it can be difficult to find them.
+                    These journalists are incredibly important -- and
+                    this project is meant to bring them together in one place.
                 </Text>
             </Card.Body>
             <Card.Footer>
