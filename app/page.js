@@ -1,6 +1,6 @@
 import Link from "@/components/link";
 
-const articles = ([
+const articles = [
   {
     title: "The Monster Chicken in the Room",
     link: "https://weeklygazette.substack.com/p/the-monster-chicken-in-the-room",
@@ -25,12 +25,20 @@ const articles = ([
     title: "The Cost of War",
     link: "https://weeklygazette.substack.com/p/the-cost-of-war",
   },
-]);
+];
+
+// TODO: Escape apostrophe
+const interactiveReporting = [
+  {
+    title: "Gaza's Airstrikes, Mapped",
+    link: "/articles/gaza-airstrikes"
+  }
+];
 
 const tools = ([
   {
     title: "Discover reporters from around the world",
-    link: "/discover",
+    link: "/tools/discover",
   },
 ]);
 
@@ -55,7 +63,13 @@ export default function Home() {
           </section>
           <section>
             <header className="font-bold pb-1 text-3xl">Interactive reporting</header>
-            <p className="italic text-xl">Coming soon</p>
+            <ol className="text-xl">
+              {interactiveReporting.map(({title, link}) => (
+                  <li key={title}>
+                    <Link className="hover:text-orange-300" href={link}>{title}</Link>
+                  </li>
+              ))}
+            </ol>
           </section>
           <section>
             <header className="font-bold pb-1 text-3xl">Tools</header>
