@@ -32,7 +32,7 @@ export default function LineGraph() {
             },
             title: {
                 display: true,
-                text: 'Chart.js Line Chart',
+                text: 'Deaths and Airstrikes in Gaza Since 2020',
             },
         },
     };
@@ -45,8 +45,15 @@ export default function LineGraph() {
         datasets: [
             {
                 fill: true,
-                label: 'Dataset 2',
+                label: 'Deaths',
                 data: labels.map((label) => objectGazaData[label].fatalities),
+                borderColor: 'rgb(53, 162, 235)',
+                backgroundColor: 'rgba(53, 162, 235, 0.5)',
+            },
+            {
+                fill: true,
+                label: 'Airstrikes',
+                data: labels.map((label) => objectGazaData[label].airstrikes),
                 borderColor: 'rgb(53, 162, 235)',
                 backgroundColor: 'rgba(53, 162, 235, 0.5)',
             },
@@ -55,7 +62,7 @@ export default function LineGraph() {
 
     return (
         <div>
-            <Line options={options} data={data}/>
+            <Line options={options} data={data} />
         </div>
     )
 }

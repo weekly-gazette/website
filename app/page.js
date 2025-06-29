@@ -30,7 +30,7 @@ const articles = [
 // TODO: Escape apostrophe
 const interactiveReporting = [
   {
-    title: "Gaza's Airstrikes, Mapped",
+    title: "Gaza's Airstrikes, Visualized",
     link: "/articles/gaza-airstrikes"
   }
 ];

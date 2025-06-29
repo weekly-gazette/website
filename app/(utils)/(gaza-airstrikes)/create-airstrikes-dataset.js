@@ -11,6 +11,9 @@ const OUTPUT_DATASET_NAME = 'airstrikes-dataset';
     const EVENT_NAME = 'Air/drone strike';
     const MILITARY_FIELD = 'actor1';
     const MILITARY_NAME = 'Military Forces of Israel';
+    const MINIMUM_YEAR = 2020
+    ;
+    const YEAR_FIELD = 'year';
 
     const data = [];
 
@@ -20,6 +23,7 @@ const OUTPUT_DATASET_NAME = 'airstrikes-dataset';
             if (
                 row[EVENT_FIELD].includes(EVENT_NAME)
                 && row[MILITARY_FIELD].includes(MILITARY_NAME)
+                && parseInt(row[YEAR_FIELD]) >= MINIMUM_YEAR
             ) {
                 console.log('Row added', row);
 
