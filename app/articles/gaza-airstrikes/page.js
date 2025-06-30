@@ -3,7 +3,8 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import React from "react";
 import SectionOneCopy from './section-one-copy';
 import Map from '@/app/articles/gaza-airstrikes/map';
-import LineGraph from "@/app/articles/gaza-airstrikes/line-graph";
+import LineGraph from '@/app/articles/gaza-airstrikes/line-graph';
+import HeatMap from '@/app/articles/gaza-airstrikes/heat-map';
 
 export default function GazaAirstrikes() {
     return (
@@ -24,6 +25,14 @@ export default function GazaAirstrikes() {
                     </div>
                 </div>
             </section>
+            <section className="grid grid-cols-2">
+                <SectionOneCopy />
+                <div className="flex justify-center">
+                    <div className="items-center w-[90%] sticky top-[0lvh] h-lvh pt-[15lvh]">
+                        <HeatMap />
+                    </div>
+                </div>
+            </section>
         </div>
-);
+    );
 }

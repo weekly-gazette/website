@@ -4,7 +4,7 @@ import React from "react";
 export default function SectionOneCopy() {
     return (
         <div className="p-10">
-            {Array.from(Array(10).keys()).map(() => (
+            {Array.from(Array(5).keys()).map(() => (
                 <div>
                     <Text h1>History</Text>
                     <Text paragraph>
