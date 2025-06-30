@@ -17,7 +17,7 @@ export default function Map() {
         bearing: 0,
         pitch: 0,
     };
-    const MAP_STYLE = "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json";
+    const MAP_STYLE = "https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json";
 
     // Date slider configuration
     const START_TIMESTAMP = 1672531200000;
@@ -45,22 +45,29 @@ export default function Map() {
         ), [selectedAirstrikes]));
 
     return (
-        <div className="items-center w-[90%] h-[90lvh]">
-            <Text paragraph>
-                {formattedDate},
-                # of daily airstrikes: {selectedAirstrikes.length},
-                # of daily deaths: {selectedAirstrikes.reduce((acc, curr) => acc + parseInt(curr.fatalities), 0)}
-                # of cumulative
-                airstrikes: {gazaData.reduce((acc, curr) => acc + (dayjs(curr.event_date).isBefore(dayjs(date)) ? 1 : 0), 0)}
-                # of cumulative
-                fatalities: {gazaData.reduce((acc, curr) => acc + parseInt(dayjs(curr.event_date).isBefore(dayjs(date)) ? curr.fatalities : 0), 0)}
-            </Text>
-            <ReactMap initialViewState={INITIAL_VIEW_STATE} mapStyle={MAP_STYLE}>
-                <GeolocateControl position="top-left"/>
-                <FullscreenControl position="top-left"/>
-                <NavigationControl position="top-left"/>
-                {pins}
-            </ReactMap>
+        <>
+            <div className="w-full grid grid-cols-2 pb-5">
+                <div className="flex flex-col items-center justify-center">
+                    <Text className="text-4xl font-black">
+                        {gazaData.reduce((acc, curr) => acc + (dayjs(curr.event_date).isBefore(dayjs(date)) ? 1 : 0), 0).toLocaleString()}
+                    </Text>
+                    <Text className="text-gray-300 text-lg font-black">Airstrikes</Text>
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                    <Text className="text-4xl font-black">
+                        {gazaData.reduce((acc, curr) => acc + parseInt(dayjs(curr.event_date).isBefore(dayjs(date)) ? curr.fatalities : 0), 0).toLocaleString()}
+                    </Text>
+                    <Text className="text-gray-300 text-lg font-black">Deaths</Text>
+                </div>
+            </div>
+            <div className="h-[50lvh]">
+                <ReactMap initialViewState={INITIAL_VIEW_STATE} mapStyle={MAP_STYLE}>
+                    <GeolocateControl position="top-left"/>
+                    <FullscreenControl position="top-left"/>
+                    <NavigationControl position="top-left"/>
+                    {pins}
+                </ReactMap>
+            </div>
             <Slider
                 className="pt-5"
                 defaultValue={[START_TIMESTAMP]}
@@ -69,6 +76,11 @@ export default function Map() {
                 step={STEP_TIMESTAMP}
                 onValueChange={([value]) => setDate(value)}
             />
-        </div>
+            <div className="flex flex-col items-center justify-center">
+                <Text className="text-md font-black whitespace-nowrap pt-5">
+                    {dayjs(formattedDate).format('MMMM DD, YYYY')}
+                </Text>
+            </div>
+        </>
     )
 }

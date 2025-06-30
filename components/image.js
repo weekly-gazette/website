@@ -6,7 +6,6 @@ export default function Image({ src, className, height, width, fade, link, round
     return (
         <div className={className}>
             <NextImage
-                fill
                 className={clsx({
                     "mask-b-from-25%": fade,
                     "rounded-3xl": rounded,

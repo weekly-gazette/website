@@ -15,7 +15,7 @@ export default function Badge({ children, className, interactive, onClick, ...pr
                     "bg-gray-800": !(interactive && touched),
                 },
                 "rounded-md whitespace-nowrap",
-                "px-1.5 py-1 text-sm text-white"
+                "px-1.5 py-1 text-xs text-white"
             )}
             onClick={() => setTouched((prevState) => interactive && !prevState)}
             {...props}

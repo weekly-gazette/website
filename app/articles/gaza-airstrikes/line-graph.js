@@ -24,15 +24,48 @@ ChartJS.register(
 );
 
 export default function LineGraph() {
+    // TODO: Make line graph adjustable with year
+
     const options = {
+        maintainAspectRatio: false,
         responsive: true,
         plugins: {
             legend: {
                 position: 'top',
+                labels: {
+                    color: 'white',
+                },
             },
             title: {
                 display: true,
                 text: 'Deaths and Airstrikes in Gaza Since 2020',
+                color: 'white',
+                font: {
+                    size: 20,
+                    weight: 'bold',
+                }
+            },
+        },
+        scales: {
+            x: {
+                title: {
+                    display: true,
+                    text: 'Date',
+                    color: 'white',
+                },
+                ticks: {
+                    color: 'white',
+                },
+            },
+            y: {
+                title: {
+                    display: true,
+                    text: 'Number',
+                    color: 'white',
+                },
+                ticks: {
+                    color: 'white',
+                },
             },
         },
     };
@@ -47,21 +80,21 @@ export default function LineGraph() {
                 fill: true,
                 label: 'Deaths',
                 data: labels.map((label) => objectGazaData[label].fatalities),
-                borderColor: 'rgb(53, 162, 235)',
-                backgroundColor: 'rgba(53, 162, 235, 0.5)',
+                borderColor: 'rgb(256, 256, 256)',
+                backgroundColor: 'rgba(256, 256, 256, 0.25)',
             },
             {
                 fill: true,
                 label: 'Airstrikes',
                 data: labels.map((label) => objectGazaData[label].airstrikes),
-                borderColor: 'rgb(53, 162, 235)',
-                backgroundColor: 'rgba(53, 162, 235, 0.5)',
+                borderColor: 'rgb(2, 103, 193)',
+                backgroundColor: 'rgba(2, 103, 193, 0.25)',
             },
         ],
     };
 
     return (
-        <div>
+        <div className="h-[60lvh]">
             <Line options={options} data={data} />
         </div>
     )
