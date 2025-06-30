@@ -1,7 +1,7 @@
 import Text from "@/components/text";
 import gazaData from '@/constants/airstrikes-dataset.json';
 import dayjs from "dayjs";
-import { Map as ReactMap, FullscreenControl, GeolocateControl, Marker, NavigationControl} from "@vis.gl/react-maplibre";
+import { Map as ReactMap, FullscreenControl, Marker, NavigationControl } from "@vis.gl/react-maplibre";
 import { Slider } from "@/components/ui/slider";
 import React, { useMemo, useState, useEffect } from "react";
 import Pin from "@/components/pin";
@@ -90,7 +90,6 @@ export default function Map() {
             </div>
             <div className="h-[50lvh]">
                 <ReactMap initialViewState={INITIAL_VIEW_STATE} mapStyle={MAP_STYLE}>
-                    <GeolocateControl position="top-left"/>
                     <FullscreenControl position="top-left"/>
                     <NavigationControl position="top-left"/>
                     {pins}
