@@ -2,9 +2,13 @@ import Text from "@/components/text";
 import gazaData from '@/constants/airstrikes-dataset.json';
 import dayjs from "dayjs";
 import { Map as ReactMap, FullscreenControl, GeolocateControl, Marker, NavigationControl} from "@vis.gl/react-maplibre";
-import {Slider} from "@/components/ui/slider";
-import React, {useMemo, useState} from "react";
+import { Slider } from "@/components/ui/slider";
+import React, { useMemo, useState, useEffect } from "react";
 import Pin from "@/components/pin";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCirclePlay, faCircleStop } from "@fortawesome/free-solid-svg-icons";
+import Button from "@/components/button";
+import clsx from "clsx";
 
 export default function Map() {
     // Map configuration
@@ -25,6 +29,15 @@ export default function Map() {
     const STEP_TIMESTAMP = 86400000;
     const DATE_FORMATTING = 'YYYY-MM-DD';
 
+    // Animation configuration
+    const SLOW_DELAY = 500;
+    const MEDIUM_DELAY = 250;
+    const FAST_DELAY = 100;
+
+    // Map state variables
+    const [animationDelay, setAnimationDelay] = useState(MEDIUM_DELAY);
+    const [animationPlaying, setAnimationPlaying] = useState(false);
+    const [animationInterval, setAnimationInterval] = useState(null);
     const [date, setDate] = useState(START_TIMESTAMP);
     const formattedDate = useMemo(() => dayjs(date).format(DATE_FORMATTING), [date]);
     const selectedAirstrikes = useMemo(() =>
@@ -43,6 +56,21 @@ export default function Map() {
                 <Pin />
             </Marker>
         ), [selectedAirstrikes]));
+
+    useEffect(() => {
+        if (animationInterval) clearInterval(animationInterval);
+
+        if (animationPlaying) {
+            const interval = setInterval(() =>
+                setDate((prevDate) => prevDate + STEP_TIMESTAMP),
+                animationDelay
+            );
+
+            setAnimationInterval(interval);
+        } else {
+            clearInterval(animationInterval);
+        }
+    }, [animationPlaying, animationDelay]);
 
     return (
         <>
@@ -68,18 +96,55 @@ export default function Map() {
                     {pins}
                 </ReactMap>
             </div>
-            <Slider
-                className="pt-5"
-                defaultValue={[START_TIMESTAMP]}
-                min={START_TIMESTAMP}
-                max={END_TIMESTAMP}
-                step={STEP_TIMESTAMP}
-                onValueChange={([value]) => setDate(value)}
-            />
+            <div className="flex gap-x-2 pt-5 items-center">
+                <button
+                    onClick={() => setAnimationPlaying((prevState) => !prevState)}
+                    className="bg-opacity-0 cursor-pointer"
+                >
+                    <FontAwesomeIcon
+                        icon={animationPlaying ? faCircleStop : faCirclePlay}
+                        className="text-3xl hover:text-gray-200"
+                    />
+                </button>
+                <Slider
+                    defaultValue={[START_TIMESTAMP]}
+                    min={START_TIMESTAMP}
+                    max={END_TIMESTAMP}
+                    step={STEP_TIMESTAMP}
+                    onValueChange={([value]) => setDate(value)}
+                    value={[date]}
+                />
+            </div>
             <div className="flex flex-col items-center justify-center">
-                <Text className="text-md font-black whitespace-nowrap pt-5">
+                <Text className="text-md font-black whitespace-nowrap pt-3">
                     {dayjs(formattedDate).format('MMMM DD, YYYY')}
                 </Text>
+            </div>
+            <div className={clsx(
+                "grid grid-cols-3 gap-x-5 pt-5 transition-opacity duration-250 ease-in-out",
+                { "opacity-100": animationPlaying, "opacity-0": true },
+            )}>
+                <Button
+                    dark
+                    className={clsx("flex justify-center", { "bg-gray-700": animationDelay === SLOW_DELAY })}
+                    onClick={() => setAnimationDelay(SLOW_DELAY)}
+                >
+                    Slow
+                </Button>
+                <Button
+                    dark
+                    className={clsx("flex justify-center", { "bg-gray-700": animationDelay === MEDIUM_DELAY })}
+                    onClick={() => setAnimationDelay(MEDIUM_DELAY)}
+                >
+                    Medium
+                </Button>
+                <Button
+                    dark
+                    className={clsx("flex justify-center", { "bg-gray-700": animationDelay === FAST_DELAY })}
+                    onClick={() => setAnimationDelay(FAST_DELAY)}
+                >
+                    Fast
+                </Button>
             </div>
         </>
     )
