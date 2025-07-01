@@ -11,6 +11,7 @@ import {
     Title,
     Tooltip
 } from "chart.js";
+import dayjs from "dayjs";
 
 ChartJS.register(
     CategoryScale,
@@ -24,8 +25,6 @@ ChartJS.register(
 );
 
 export default function LineGraph() {
-    // TODO: Make line graph adjustable with year
-
     const options = {
         maintainAspectRatio: false,
         responsive: true,
@@ -70,23 +69,24 @@ export default function LineGraph() {
         },
     };
 
-    const objectGazaData = Object.fromEntries(cumulativeGazaData);
-    const labels = Object.keys(objectGazaData);
+    const formattedGazaData = Object.fromEntries(cumulativeGazaData);
+    const labels = Object.keys(formattedGazaData);
+    const displayLabels = labels.map((label) => dayjs(label).format('MMM. YYYY'));
 
     const data = {
-        labels,
+        labels: displayLabels,
         datasets: [
             {
                 fill: true,
                 label: 'Deaths',
-                data: labels.map((label) => objectGazaData[label].fatalities),
+                data: labels.map((label) => formattedGazaData[label].fatalities),
                 borderColor: 'rgb(256, 256, 256)',
                 backgroundColor: 'rgba(256, 256, 256, 0.25)',
             },
             {
                 fill: true,
                 label: 'Airstrikes',
-                data: labels.map((label) => objectGazaData[label].airstrikes),
+                data: labels.map((label) => formattedGazaData[label].airstrikes),
                 borderColor: 'rgb(2, 103, 193)',
                 backgroundColor: 'rgba(2, 103, 193, 0.25)',
             },

@@ -1,6 +1,7 @@
 const { OUTPUT_DATASET_NAME: inputDatasetName } = require('./create-airstrikes-dataset');
 const gazaData = require(`../../../constants/${inputDatasetName}.json`);
 const fs = require('fs');
+const dayjs = require('dayjs');
 
 const OUTPUT_DATASET_NAME = 'geojson-airstrikes-dataset';
 
@@ -15,6 +16,7 @@ const OUTPUT_DATASET_NAME = 'geojson-airstrikes-dataset';
             "properties": {
                 "name": point.location,
                 "fatalities": parseInt(point.fatalities),
+                "date": dayjs(point.event_date).valueOf(),
             }
         })
     });

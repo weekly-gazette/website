@@ -17,7 +17,7 @@ export default function Map() {
     const INITIAL_VIEW_STATE = {
         latitude: GAZA_LATITUDE,
         longitude: GAZA_LONGITUDE,
-        zoom: 10,
+        zoom: 9,
         bearing: 0,
         pitch: 0,
     };
