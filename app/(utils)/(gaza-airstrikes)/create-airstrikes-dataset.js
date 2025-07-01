@@ -1,5 +1,6 @@
 const fs = require('fs');
 const csv = require('csv-parser');
+const dayjs = require('dayjs');
 
 const INPUT_DATASET_NAME = 'gaza-acled-data';
 const OUTPUT_DATASET_NAME = 'airstrikes-dataset';
@@ -11,9 +12,8 @@ const OUTPUT_DATASET_NAME = 'airstrikes-dataset';
     const EVENT_NAME = 'Air/drone strike';
     const MILITARY_FIELD = 'actor1';
     const MILITARY_NAME = 'Military Forces of Israel';
-    const MINIMUM_YEAR = 2020
-    ;
-    const YEAR_FIELD = 'year';
+    const MINIMUM_DATE = '2023-10-01';
+    const DATE_FIELD = 'event_date';
 
     const data = [];
 
@@ -23,7 +23,7 @@ const OUTPUT_DATASET_NAME = 'airstrikes-dataset';
             if (
                 row[EVENT_FIELD].includes(EVENT_NAME)
                 && row[MILITARY_FIELD].includes(MILITARY_NAME)
-                && parseInt(row[YEAR_FIELD]) >= MINIMUM_YEAR
+                && dayjs(row[DATE_FIELD]).isAfter(MINIMUM_DATE)
             ) {
                 console.log('Row added', row);
 

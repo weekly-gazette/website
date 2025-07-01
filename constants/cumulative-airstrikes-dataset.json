@@ -1,359 +1,149 @@
 [
   [
-    "2020-01",
-    {
-      "fatalities": 0,
-      "airstrikes": 18
-    }
-  ],
-  [
-    "2020-02",
-    {
-      "fatalities": 0,
-      "airstrikes": 42
-    }
-  ],
-  [
-    "2020-03",
-    {
-      "fatalities": 0,
-      "airstrikes": 43
-    }
-  ],
-  [
-    "2020-06",
-    {
-      "fatalities": 0,
-      "airstrikes": 49
-    }
-  ],
-  [
-    "2020-07",
-    {
-      "fatalities": 0,
-      "airstrikes": 51
-    }
-  ],
-  [
-    "2020-08",
-    {
-      "fatalities": 0,
-      "airstrikes": 95
-    }
-  ],
-  [
-    "2020-09",
-    {
-      "fatalities": 0,
-      "airstrikes": 100
-    }
-  ],
-  [
-    "2020-10",
-    {
-      "fatalities": 0,
-      "airstrikes": 107
-    }
-  ],
-  [
-    "2020-11",
-    {
-      "fatalities": 0,
-      "airstrikes": 116
-    }
-  ],
-  [
-    "2020-12",
-    {
-      "fatalities": 0,
-      "airstrikes": 120
-    }
-  ],
-  [
-    "2021-01",
-    {
-      "fatalities": 0,
-      "airstrikes": 122
-    }
-  ],
-  [
-    "2021-03",
-    {
-      "fatalities": 0,
-      "airstrikes": 125
-    }
-  ],
-  [
-    "2021-04",
-    {
-      "fatalities": 0,
-      "airstrikes": 143
-    }
-  ],
-  [
-    "2021-05",
-    {
-      "fatalities": 199,
-      "airstrikes": 252
-    }
-  ],
-  [
-    "2021-06",
-    {
-      "fatalities": 199,
-      "airstrikes": 256
-    }
-  ],
-  [
-    "2021-07",
-    {
-      "fatalities": 199,
-      "airstrikes": 260
-    }
-  ],
-  [
-    "2021-08",
-    {
-      "fatalities": 199,
-      "airstrikes": 273
-    }
-  ],
-  [
-    "2021-09",
-    {
-      "fatalities": 199,
-      "airstrikes": 284
-    }
-  ],
-  [
-    "2021-10",
-    {
-      "fatalities": 199,
-      "airstrikes": 285
-    }
-  ],
-  [
-    "2022-01",
-    {
-      "fatalities": 199,
-      "airstrikes": 286
-    }
-  ],
-  [
-    "2022-04",
-    {
-      "fatalities": 199,
-      "airstrikes": 290
-    }
-  ],
-  [
-    "2022-06",
-    {
-      "fatalities": 199,
-      "airstrikes": 294
-    }
-  ],
-  [
-    "2022-07",
-    {
-      "fatalities": 199,
-      "airstrikes": 297
-    }
-  ],
-  [
-    "2022-08",
-    {
-      "fatalities": 245,
-      "airstrikes": 361
-    }
-  ],
-  [
-    "2022-11",
-    {
-      "fatalities": 245,
-      "airstrikes": 362
-    }
-  ],
-  [
-    "2022-12",
-    {
-      "fatalities": 245,
-      "airstrikes": 365
-    }
-  ],
-  [
-    "2023-01",
-    {
-      "fatalities": 245,
-      "airstrikes": 367
-    }
-  ],
-  [
-    "2023-05",
-    {
-      "fatalities": 279,
-      "airstrikes": 460
-    }
-  ],
-  [
-    "2023-07",
-    {
-      "fatalities": 279,
-      "airstrikes": 467
-    }
-  ],
-  [
-    "2023-09",
-    {
-      "fatalities": 279,
-      "airstrikes": 478
-    }
-  ],
-  [
     "2023-10",
     {
-      "fatalities": 8423,
-      "airstrikes": 1160
+      "fatalities": 8144,
+      "airstrikes": 682
     }
   ],
   [
     "2023-11",
     {
-      "fatalities": 13528,
-      "airstrikes": 1725
+      "fatalities": 13249,
+      "airstrikes": 1247
     }
   ],
   [
     "2023-12",
     {
-      "fatalities": 19292,
-      "airstrikes": 2368
+      "fatalities": 19013,
+      "airstrikes": 1890
     }
   ],
   [
     "2024-01",
     {
-      "fatalities": 22787,
-      "airstrikes": 2880
+      "fatalities": 22508,
+      "airstrikes": 2402
     }
   ],
   [
     "2024-02",
     {
-      "fatalities": 25035,
-      "airstrikes": 3395
+      "fatalities": 24756,
+      "airstrikes": 2917
     }
   ],
   [
     "2024-03",
     {
-      "fatalities": 26821,
-      "airstrikes": 3939
+      "fatalities": 26542,
+      "airstrikes": 3461
     }
   ],
   [
     "2024-04",
     {
-      "fatalities": 28344,
-      "airstrikes": 4408
+      "fatalities": 28065,
+      "airstrikes": 3930
     }
   ],
   [
     "2024-05",
     {
-      "fatalities": 29765,
-      "airstrikes": 4972
+      "fatalities": 29486,
+      "airstrikes": 4494
     }
   ],
   [
     "2024-06",
     {
-      "fatalities": 31004,
-      "airstrikes": 5368
+      "fatalities": 30725,
+      "airstrikes": 4890
     }
   ],
   [
     "2024-07",
     {
-      "fatalities": 32368,
-      "airstrikes": 5841
+      "fatalities": 32089,
+      "airstrikes": 5363
     }
   ],
   [
     "2024-08",
     {
-      "fatalities": 33719,
-      "airstrikes": 6364
+      "fatalities": 33440,
+      "airstrikes": 5886
     }
   ],
   [
     "2024-09",
     {
-      "fatalities": 34718,
-      "airstrikes": 6768
+      "fatalities": 34439,
+      "airstrikes": 6290
     }
   ],
   [
     "2024-10",
     {
-      "fatalities": 36600,
-      "airstrikes": 7259
+      "fatalities": 36321,
+      "airstrikes": 6781
     }
   ],
   [
     "2024-11",
     {
-      "fatalities": 38094,
-      "airstrikes": 7703
+      "fatalities": 37815,
+      "airstrikes": 7225
     }
   ],
   [
     "2024-12",
     {
-      "fatalities": 39437,
-      "airstrikes": 8183
+      "fatalities": 39158,
+      "airstrikes": 7705
     }
   ],
   [
     "2025-01",
     {
-      "fatalities": 40380,
-      "airstrikes": 8526
+      "fatalities": 40101,
+      "airstrikes": 8048
     }
   ],
   [
     "2025-02",
     {
-      "fatalities": 40416,
-      "airstrikes": 8564
+      "fatalities": 40137,
+      "airstrikes": 8086
     }
   ],
   [
     "2025-03",
     {
-      "fatalities": 41546,
-      "airstrikes": 8924
+      "fatalities": 41267,
+      "airstrikes": 8446
     }
   ],
   [
     "2025-04",
     {
-      "fatalities": 42888,
-      "airstrikes": 9538
+      "fatalities": 42609,
+      "airstrikes": 9060
     }
   ],
   [
     "2025-05",
     {
-      "fatalities": 44731,
-      "airstrikes": 10252
+      "fatalities": 44452,
+      "airstrikes": 9774
     }
   ],
   [
     "2025-06",
     {
-      "fatalities": 45881,
-      "airstrikes": 10632
+      "fatalities": 45602,
+      "airstrikes": 10154
     }
   ]
 ]

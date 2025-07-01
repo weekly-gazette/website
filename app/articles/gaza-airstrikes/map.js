@@ -24,8 +24,8 @@ export default function Map() {
     const MAP_STYLE = "https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json";
 
     // Date slider configuration
-    const START_TIMESTAMP = 1672531200000;
-    const END_TIMESTAMP = 1750377600000;
+    const START_TIMESTAMP = dayjs('2023-10-01').valueOf();
+    const END_TIMESTAMP = dayjs('2025-06-20').valueOf();
     const STEP_TIMESTAMP = 86400000;
     const DATE_FORMATTING = 'YYYY-MM-DD';
 
@@ -71,6 +71,14 @@ export default function Map() {
             clearInterval(animationInterval);
         }
     }, [animationPlaying, animationDelay]);
+
+    useEffect(() => {
+        if (date === END_TIMESTAMP) {
+            clearInterval(animationInterval);
+
+            setAnimationPlaying(false);
+        }
+    }, [date, animationInterval]);
 
     return (
         <>
