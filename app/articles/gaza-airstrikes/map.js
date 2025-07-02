@@ -44,6 +44,24 @@ export default function Map() {
             gazaData.filter((airstrike) => airstrike.event_date === formattedDate),
         [formattedDate]
     );
+    const cumulativeStatistics = React.useMemo(() => {
+       const counts = gazaData.reduce((acc, curr) => {
+            const airstrikeDate = dayjs(curr.event_date);
+            const queryDate = dayjs(date);
+
+            if (airstrikeDate.isBefore(queryDate)) {
+                acc.airstrikesCount += 1;
+                acc.deathsCount += parseInt(curr.fatalities);
+            }
+
+            return acc;
+       }, { airstrikesCount: 0, deathsCount: 0 });
+
+       return {
+           airstrikesCount: counts.airstrikesCount.toLocaleString(),
+           deathsCount: counts.deathsCount.toLocaleString(),
+       };
+    }, [date]);
 
     const pins = useMemo(() => selectedAirstrikes
         .map((airstrike) => (
@@ -85,15 +103,15 @@ export default function Map() {
             <div className="w-full grid grid-cols-2 pb-5">
                 <div className="flex flex-col items-center justify-center">
                     <Text className="text-4xl font-black">
-                        {gazaData.reduce((acc, curr) => acc + (dayjs(curr.event_date).isBefore(dayjs(date)) ? 1 : 0), 0).toLocaleString()}
+                        {cumulativeStatistics.airstrikesCount}
                     </Text>
-                    <Text className="text-gray-300 text-lg font-black">Airstrikes</Text>
+                    <Text className="text-gray-300 text-lg">Airstrikes</Text>
                 </div>
                 <div className="flex flex-col items-center justify-center">
                     <Text className="text-4xl font-black">
-                        {gazaData.reduce((acc, curr) => acc + parseInt(dayjs(curr.event_date).isBefore(dayjs(date)) ? curr.fatalities : 0), 0).toLocaleString()}
+                        {cumulativeStatistics.deathsCount}
                     </Text>
-                    <Text className="text-gray-300 text-lg font-black">Deaths</Text>
+                    <Text className="text-gray-300 text-lg">Deaths</Text>
                 </div>
             </div>
             <div className="h-[50lvh]">

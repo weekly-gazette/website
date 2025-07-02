@@ -2,6 +2,7 @@ import { Map as ReactMap, FullscreenControl, NavigationControl, Source, Layer } 
 import React from "react";
 import gazaData from '@/constants/geojson-airstrikes-dataset.json';
 import dayjs from 'dayjs';
+import Text from '@/components/text';
 
 export default function HeatMap() {
     // TODO: Componentize map?
@@ -40,7 +41,7 @@ export default function HeatMap() {
                 'interpolate',
                 ['linear'],
                 ['get', 'fatalities'],
-                0, 5, 20, 20,
+                0, 5, 20, 15,
             ],
 
             // Intensity increases slightly with zoom
@@ -60,8 +61,7 @@ export default function HeatMap() {
                 ['heatmap-density'],
                 0, 'rgba(222, 205, 32, 0)',
                 0.01, 'rgba(222, 205, 32)',
-                0.5, 'rgba(69, 203, 34)',
-                1, 'rgba(192, 48, 33)'
+                1, 'rgb(208,35,18)'
             ],
 
             // Opacity
@@ -70,14 +70,35 @@ export default function HeatMap() {
     };
 
     return (
-        <div className="h-[60lvh]">
-            <ReactMap initialViewState={INITIAL_VIEW_STATE} mapStyle={MAP_STYLE}>
-                <FullscreenControl position="top-left"/>
-                <NavigationControl position="top-left"/>
-                <Source type="geojson" data={gazaData}>
-                    <Layer {...heatmapLayerConfig} />
-                </Source>
-            </ReactMap>
+        <div>
+            <div className="h-[60lvh]">
+                <ReactMap initialViewState={INITIAL_VIEW_STATE} mapStyle={MAP_STYLE}>
+                    <FullscreenControl position="top-left"/>
+                    <NavigationControl position="top-left"/>
+                    <Source type="geojson" data={gazaData}>
+                        <Layer {...heatmapLayerConfig} />
+                    </Source>
+                </ReactMap>
+            </div>
+            <div className="flex flex-col gap-y-5 pt-5">
+                <div>
+                    <div className="flex justify-between pb-3">
+                        <Text paragraph>Older</Text>
+                        <Text paragraph>Newer</Text>
+                    </div>
+                    <div className="h-[1.5lvh] w-full bg-gradient-to-r from-yellow-300 to-red-600 rounded-sm"/>
+                </div>
+                <div className="flex justify-between w-full">
+                    <div className="flex items-center gap-x-2">
+                        <Text paragraph>Less deaths</Text>
+                        <div className="rounded-xl border border-white border-dotted h-[15px] w-[15px]"/>
+                    </div>
+                    <div className="flex items-center gap-x-2">
+                        <Text paragraph>More deaths</Text>
+                        <div className="rounded-3xl border border-white border-dotted h-[35px] w-[35px]"/>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
