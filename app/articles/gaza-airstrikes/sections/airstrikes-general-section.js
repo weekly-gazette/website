@@ -20,7 +20,7 @@ export default function AirstrikesGeneralSection() {
         <MapContext value={mapContext}>
             <AirstrikesGeneral />
             <div className="flex justify-center">
-                <div className="w-[90%] sticky top-[0lvh] h-lvh pt-[5lvh]">
+                <div className="w-[90%] sticky top-[0lvh] h-lvh pt-[12lvh]">
                     <Map />
                 </div>
             </div>
