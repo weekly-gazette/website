@@ -8,13 +8,13 @@ export default function Numbers() {
                 <Text className="text-5xl font-black">
                     16.3
                 </Text>
-                <Text className="text-gray-300 text-xl">Airstrikes per day</Text>
+                <Text className="text-gray-300 text-xl">Airstrike events per day</Text>
             </div>
             <div className="flex flex-col items-center justify-center gap-y-2">
                 <Text className="text-5xl font-black">
                     4.5
                 </Text>
-                <Text className="text-gray-300 text-xl">Casualties per airstrike</Text>
+                <Text className="text-gray-300 text-xl">Casualties per airstrike event</Text>
             </div>
             <div className="flex flex-col items-center justify-center gap-y-2">
                 <Text className="text-5xl font-black">

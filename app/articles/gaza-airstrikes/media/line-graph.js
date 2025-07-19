@@ -80,15 +80,16 @@ export default function LineGraph() {
                 fill: true,
                 label: 'Casualties',
                 data: labels.map((label) => formattedGazaData[label].fatalities),
-                borderColor: 'rgb(256, 256, 256)',
-                backgroundColor: 'rgba(256, 256, 256, 0.25)',
+                borderColor: 'rgb(255, 99, 103)',
+                backgroundColor: 'rgba(255, 99, 103, 0.25)',
             },
             {
                 fill: true,
                 label: 'Airstrikes',
                 data: labels.map((label) => formattedGazaData[label].airstrikes),
-                borderColor: 'rgb(2, 103, 193)',
-                backgroundColor: 'rgba(2, 103, 193, 0.25)',
+
+                borderColor: 'rgb(256, 256, 256)',
+                backgroundColor: 'rgba(256, 256, 256, 0.25)',
             },
         ],
     };

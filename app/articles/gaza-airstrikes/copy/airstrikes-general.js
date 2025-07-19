@@ -5,7 +5,7 @@ import dayjs from "dayjs";
 export default function AirstrikesGeneral() {
     const events = [
         { date: '10-07-2023', label: "Hamas kills 1,195 Israelis and takes 251 hostages, prompting Israel to launch airstrikes on the Gaza Strip." },
-        { date: '10-13-2023', label: "Israel instructs 1.1 million Palestinians to evacuate from northern Gaza to southern Gaza. Despite the evacuation order, airstrikes continue to strike safe zones in southern Gaza. Hundreds of thousands flee to southern Gaza within two days. Many evacuate by foot due to severe fuel shortages. According to the World Health Organization, the evacuation was a “death sentence” for many hospital patients due to the difficulty of moving them." },
+        { date: '10-13-2023', label: "Israel instructs 1.1 million Palestinians to evacuate from northern Gaza to southern Gaza. Hamas instructs residents not to evacuate. Despite the evacuation order, airstrikes continue to strike safe zones in southern Gaza. Hundreds of thousands flee to southern Gaza within two days. Many evacuate by foot due to severe fuel shortages. According to the World Health Organization, the evacuation was a “death sentence” for many hospital patients due to the difficulty of moving them." },
         { date: '10-27-2023', label: "Israel launches its ground invasion of the Gaza Strip." },
         { date: '10-28-2023', label: "By this point, almost 4 in 10 Palestinians who were killed were in the safe zone in southern Gaza." },
         { date: '11-17-2023', label: "The Palestinian Bureau of Statistics estimates that up to 800,000 civilians are still in northern Gaza. Children were “hanging on by a thread”, according to UNICEF regional director. Israeli airstrikes continue in both southern and northern Gaza despite the high number of civilians present." },
@@ -23,7 +23,6 @@ export default function AirstrikesGeneral() {
         { date: '06-29-2025', label: "Israel issues evacuation orders of northern Gaza (Gaza City, Jabalia) to southern Gaza." },
         { date: '07-16-2025', label: "Israel again issues orders to residents in northern Gaza to evacuate to Al-Mawasi in southern Gaza, despite worsening conditions in Al-Mawasi." }
     ];
-
 
     const organizedEvents = Object.entries(events.reduce((acc, curr) => {
         const year = dayjs(curr.date).year();

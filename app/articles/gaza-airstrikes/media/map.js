@@ -111,7 +111,7 @@ export default function Map() {
                     <Text className="text-4xl font-black">
                         {cumulativeStatistics.airstrikesCount}
                     </Text>
-                    <Text className="text-gray-300 text-lg">Airstrikes</Text>
+                    <Text className="text-gray-300 text-lg">Airstrike events</Text>
                 </div>
                 <div className="flex flex-col items-center justify-center">
                     <Text className="text-4xl font-black">

@@ -1,12 +1,14 @@
 "use client";
 import React from "react";
-import Preface from './copy/preface';
+import PrefaceHistory from './copy/preface-history';
 import LineGraph from '@/app/articles/gaza-airstrikes/media/line-graph';
 import HeatMap from '@/app/articles/gaza-airstrikes/media/heat-map';
 import Numbers from '@/app/articles/gaza-airstrikes/media/numbers';
 import Text from "@/components/text";
-import PrefaceSection from "@/app/articles/gaza-airstrikes/sections/preface-section";
+import PrefaceHistorySection from "@/app/articles/gaza-airstrikes/sections/preface-history-section";
 import AirstrikesGeneralSection from "@/app/articles/gaza-airstrikes/sections/airstrikes-general-section";
+import PrefaceAnalysisSection from "@/app/articles/gaza-airstrikes/sections/preface-analysis-section";
+import PrefaceStrikesSection from "@/app/articles/gaza-airstrikes/sections/preface-strikes-section";
 
 export default function GazaAirstrikes() {
     return (
@@ -15,26 +17,24 @@ export default function GazaAirstrikes() {
                 <Text className="text-5xl font-bold">Gaza&apos;s Airstrikes, Visualized</Text>
             </header>
             <section className="grid grid-cols-2">
-                <PrefaceSection />
+                <PrefaceHistorySection />
+            </section>
+            <section className="grid grid-cols-2">
+                <PrefaceStrikesSection />
+            </section>
+            <section className="grid grid-cols-2">
+                <PrefaceAnalysisSection />
             </section>
             <section className="grid grid-cols-2">
                 <AirstrikesGeneralSection />
             </section>
             <section className="w-full flex justify-center items-center">
                 <div className="w-3/4">
-                    <Numbers />
+                    <Numbers/>
                 </div>
             </section>
             <section className="grid grid-cols-2">
-                <Preface />
-                <div className="flex justify-center">
-                    <div className="w-[90%] sticky top-[0lvh] h-lvh pt-[10lvh]">
-                        <LineGraph />
-                    </div>
-                </div>
-            </section>
-            <section className="grid grid-cols-2">
-                <Preface/>
+                <PrefaceHistory />
                 <div className="flex justify-center">
                     <div className="w-[90%] sticky top-[0lvh] h-lvh pt-[10lvh]">
                         <HeatMap/>
