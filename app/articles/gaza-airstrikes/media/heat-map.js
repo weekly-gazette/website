@@ -61,7 +61,7 @@ export default function HeatMap() {
                 ['heatmap-density'],
                 0, 'rgba(222, 205, 32, 0)',
                 0.01, 'rgba(222, 205, 32)',
-                1, 'rgb(208,35,18)'
+                1, 'rgb(208,18,0)'
             ],
 
             // Opacity
@@ -71,6 +71,9 @@ export default function HeatMap() {
 
     return (
         <div>
+            <div className="w-full flex justify-center py-3">
+                <Text h1>Heatmap of Airstrikes Since Oct. 2023</Text>
+            </div>
             <div className="h-[60lvh]">
                 <ReactMap initialViewState={INITIAL_VIEW_STATE} mapStyle={MAP_STYLE}>
                     <FullscreenControl position="top-left"/>
@@ -90,11 +93,11 @@ export default function HeatMap() {
                 </div>
                 <div className="flex justify-between w-full">
                     <div className="flex items-center gap-x-2">
-                        <Text paragraph>Less deaths</Text>
+                        <Text paragraph>Less casualties</Text>
                         <div className="rounded-xl border border-white border-dotted h-[15px] w-[15px]"/>
                     </div>
                     <div className="flex items-center gap-x-2">
-                        <Text paragraph>More deaths</Text>
+                        <Text paragraph>More casualties</Text>
                         <div className="rounded-3xl border border-white border-dotted h-[35px] w-[35px]"/>
                     </div>
                 </div>

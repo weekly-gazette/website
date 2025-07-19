@@ -10,8 +10,6 @@ import Carousel from "@/components/carousel";
 
 const RESULTS_LIMIT = 10;
 
-// TODO: Add countries to journalists
-
 export default function WizardResults() {
     const { setStep, selectedRegions } = useContext(WizardContext);
 

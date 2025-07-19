@@ -3,14 +3,21 @@ import gazaData from '@/constants/airstrikes-dataset.json';
 import dayjs from "dayjs";
 import { Map as ReactMap, FullscreenControl, Marker, NavigationControl } from "@vis.gl/react-maplibre";
 import { Slider } from "@/components/ui/slider";
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect, useContext } from "react";
 import Pin from "@/components/pin";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCirclePlay, faCircleStop } from "@fortawesome/free-solid-svg-icons";
 import Button from "@/components/button";
 import clsx from "clsx";
+import MapContext from "@/contexts/map-context";
+import isSameOrBefore from 'dayjs/plugin/isSameOrBefore';
+
+dayjs.extend(isSameOrBefore);
 
 export default function Map() {
+    // Contexts
+    const { date, setDate, location, setLocation } = useContext(MapContext);
+
     // Map configuration
     const GAZA_LATITUDE = 31.43411;
     const GAZA_LONGITUDE = 34.38361;
@@ -38,7 +45,6 @@ export default function Map() {
     const [animationDelay, setAnimationDelay] = useState(MEDIUM_DELAY);
     const [animationPlaying, setAnimationPlaying] = useState(false);
     const [animationInterval, setAnimationInterval] = useState(null);
-    const [date, setDate] = useState(START_TIMESTAMP);
     const formattedDate = useMemo(() => dayjs(date).format(DATE_FORMATTING), [date]);
     const selectedAirstrikes = useMemo(() =>
             gazaData.filter((airstrike) => airstrike.event_date === formattedDate),
@@ -49,17 +55,17 @@ export default function Map() {
             const airstrikeDate = dayjs(curr.event_date);
             const queryDate = dayjs(date);
 
-            if (airstrikeDate.isBefore(queryDate)) {
+            if (airstrikeDate.isSameOrBefore(queryDate)) {
                 acc.airstrikesCount += 1;
-                acc.deathsCount += parseInt(curr.fatalities);
+                acc.casualtiesCount += parseInt(curr.fatalities);
             }
 
             return acc;
-       }, { airstrikesCount: 0, deathsCount: 0 });
+       }, { airstrikesCount: 0, casualtiesCount: 0 });
 
        return {
            airstrikesCount: counts.airstrikesCount.toLocaleString(),
-           deathsCount: counts.deathsCount.toLocaleString(),
+           casualtiesCount: counts.casualtiesCount.toLocaleString(),
        };
     }, [date]);
 
@@ -109,9 +115,9 @@ export default function Map() {
                 </div>
                 <div className="flex flex-col items-center justify-center">
                     <Text className="text-4xl font-black">
-                        {cumulativeStatistics.deathsCount}
+                        {cumulativeStatistics.casualtiesCount}
                     </Text>
-                    <Text className="text-gray-300 text-lg">Deaths</Text>
+                    <Text className="text-gray-300 text-lg">Casualties</Text>
                 </div>
             </div>
             <div className="h-[50lvh]">

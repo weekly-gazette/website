@@ -37,7 +37,7 @@ export default function LineGraph() {
             },
             title: {
                 display: true,
-                text: 'Deaths and Airstrikes in Gaza Since 2020',
+                text: 'Casualties and Airstrikes in Gaza Since Oct. 2023',
                 color: 'white',
                 font: {
                     size: 20,
@@ -78,7 +78,7 @@ export default function LineGraph() {
         datasets: [
             {
                 fill: true,
-                label: 'Deaths',
+                label: 'Casualties',
                 data: labels.map((label) => formattedGazaData[label].fatalities),
                 borderColor: 'rgb(256, 256, 256)',
                 backgroundColor: 'rgba(256, 256, 256, 0.25)',
