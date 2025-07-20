@@ -6,7 +6,7 @@ export default function PrefaceAnalysisSection() {
         <>
             <PrefaceAnalysis />
             <div className="flex justify-center">
-                <div className="flex justify-center w-[90%] sticky top-[0lvh] h-lvh pt-[15lvh]">
+                <div className="flex justify-center w-[90%] sticky top-[0lvh] h-lvh pt-[20lvh]">
                     <div className="w-[40lvw]">
                         <LineGraph />
                     </div>
