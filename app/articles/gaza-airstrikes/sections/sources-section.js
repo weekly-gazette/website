@@ -1,5 +1,5 @@
 import Sources from "@/app/articles/gaza-airstrikes/copy/sources";
-import Text from "@/components/Text";
+import Text from "@/components/text";
 
 export default function SourcesSection() {
     return (

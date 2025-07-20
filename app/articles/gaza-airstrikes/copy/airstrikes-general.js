@@ -1,5 +1,5 @@
 import Timeline from "@/components/timeline";
-import Text from "@/components/Text";
+import Text from "@/components/text";
 import dayjs from "dayjs";
 
 export default function AirstrikesGeneral() {

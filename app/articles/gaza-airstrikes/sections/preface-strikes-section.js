@@ -2,7 +2,7 @@ import Image from "@/components/image";
 import gazaMosque from "@/public/gaza-mosque.png";
 import React from "react";
 import PrefaceStrikes from "@/app/articles/gaza-airstrikes/copy/preface-strikes";
-import Text from "@/components/Text";
+import Text from "@/components/text";
 
 export default function PrefaceStrikesSection() {
     return (
