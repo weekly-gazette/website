@@ -37,7 +37,7 @@ export default function AirstrikesGeneral() {
         <div className="p-10">
             <div className="space-y-10">
                 {organizedEvents.map(([year, events]) => (
-                    <div>
+                    <div key={year}>
                         <Text className="text-3xl font-bold pb-5">{year}</Text>
                         <Timeline events={events} />
                     </div>

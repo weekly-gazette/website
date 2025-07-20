@@ -36,7 +36,7 @@ export default function Sources() {
             </li>
             <li><Link
                 href="https://www.theatlantic.com/podcasts/archive/2025/06/mossads-former-chief-calls-the-war-in-gaza-useless/683037/">The
-                    Atlantic – Mossad's Former Chief on Gaza War</Link></li>
+                    Atlantic – Mossad&apos;s Former Chief on Gaza War</Link></li>
             <li><Link
                 href="https://www.theguardian.com/world/2025/apr/14/israel-government-gaza-hostages-mossad-criticism">The
                     Guardian – Mossad Criticizes Israeli Gov’t</Link></li>
@@ -82,7 +82,7 @@ export default function Sources() {
                     East Institute – Human Shields or Shielding Israel?</Link></li>
             <li><Link
                 href="https://mwi.westpoint.edu/israels-new-approach-to-tunnels-a-paradigm-shift-in-underground-warfare/">MWI
-                    West Point – Israel's Tunnel Warfare Strategy</Link></li>
+                    West Point – Israel&apos;s Tunnel Warfare Strategy</Link></li>
             <li><Link
                 href="https://www.inss.org.il/strategic_assessment/the-practice-of-roof-knocking-from-the-perspective-of-international-law/">INSS
                     – Roof Knocking and Int’l Law</Link></li>

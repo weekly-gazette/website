@@ -4,8 +4,8 @@ export default function HeatMapGeneral() {
     return (
         <div className="flex flex-col space-y-10 text-lg p-10">
             <div>
-                <Text className="text-2xl font-bold pb-3">What are the IDF’s goals with its airstrikes?</Text>
-                According to the +972 Magazine, Israel’s airstrikes have several primary goals:
+                <Text className="text-2xl font-bold pb-3">What are the IDF&apos;s goals with its airstrikes?</Text>
+                According to the +972 Magazine, Israel&apos;s airstrikes have several primary goals:
                 <br/><br/>
                 <ul className="list-disc pl-5 space-y-2">
                     <li>Destroying Hamas weaponry and infrastructure, such as rockets, mortars, headquarters, tunnels, and so on</li>
@@ -19,13 +19,13 @@ export default function HeatMapGeneral() {
                 cities, for example, Mohammed Deif in Khan Younis — who was one of the founders of the al-Qassam
                 Brigades. However, the IDF has also targeted sites like refugee camps in Jabalia and thousands of
                 residential buildings, indicating their goal of simultaneously expelling Palestinian civilians whilst
-                encouraging them to exert pressure on Hamas. According to the +972 Magazine, about 50% of the IDF’s
+                encouraging them to exert pressure on Hamas. According to the +972 Magazine, about 50% of the IDF&apos;s
                 targets in the first five days after Oct. 7th were public infrastructure and civilian residences.
                 <br/><br/>
                 Airstrikes are also used in lieu of ground invasions in order to prevent IDF casualties. IDF officials
                 have estimated that Hamas has booby-trapped thousands of buildings across the Gaza Strip, but this has
                 not been independently verified. If this is the case, that means that airstrikes are a safer option for
-                the IDF at the cost of Palestinian civilians’ lives.
+                the IDF at the cost of Palestinian civilians&apos; lives.
                 <br/><br/>
                 The IDF also may destroy buildings in order to impede the movement of Hamas members and Palestinian
                 civilians by creating debris, making it harder for them to travel, access aid, or access other essential
@@ -47,14 +47,14 @@ export default function HeatMapGeneral() {
                 Israeli intelligence uses software called the “Gospel” to plan its airstrikes, which uses AI to
                 automatically suggest locations to target. This raises questions about how the AI model is trained and
                 how its results are evaluated when used to target Palestinians. Per a former Israeli intelligence member
-                interviewed by +972 Magazine: “It really is like a factory. We work quickly and there is no time to
+                interviewed by +972 Magazine: &quot;It really is like a factory. We work quickly and there is no time to
                 delve deep into the target. The view is that we are judged according to how many targets we manage to
-                generate.”
+                generate.&quot;
                 <br/><br/>
-                Another intelligence member said that “nothing happens by accident .. when a 3-year-old girl is killed
-                in a home in Gaza, it’s because someone in the army decided … that it was a price worth paying in order
+                Another intelligence member said that &quot;nothing happens by accident .. when a 3-year-old girl is killed
+                in a home in Gaza, it&apos;s because someone in the army decided … that it was a price worth paying in order
                 to hit [another] target. We are not Hamas. These are not random rockets. Everything is intentional. We
-                know exactly how much collateral damage there is in every home.”
+                know exactly how much collateral damage there is in every home.&quot;
                 <br/><br/>
                 This is especially concerning given that Israel has sufficiently advanced technology to assess the
                 civilian risk of airstrikes in the form of the CMHC (Civilian Harm Mitigation Cell). The CMHC divides
@@ -67,28 +67,28 @@ export default function HeatMapGeneral() {
             <div>
                 <Text className="text-2xl font-bold pb-3">How effective are Israeli airstrikes at targeting Hamas?</Text>
                 U.S. intelligence estimates that the IDF has killed between 10,000 to 20,000 Hamas militants since 2023,
-                with no breakdown on the effect of airstrikes specifically. However, it’s difficult to know either of
+                with no breakdown on the effect of airstrikes specifically. However, it&apos;s difficult to know either of
                 these statistics with certainty because the Gaza Health Ministry does not distinguish between civilians
                 and combatants.
                 <br/><br/>
                 Depending on the military objective, airstrikes can be of varying effectiveness. For example, in regards
                 to targeting Hamas-built tunnels, an article from the West Point Military Academy stated that bombs
-                dropped on Gaza in 2021 only destroyed 100 kilometers of Hamas’s tunnels out of a total of 550 to 700
+                dropped on Gaza in 2021 only destroyed 100 kilometers of Hamas&apos;s tunnels out of a total of 550 to 700
                 kilometers. In addition, to destroy tunnels completely, the IDF would need to use injected TNT or place
                 explosives manually in them. The author argued that attempting to destroy all of them is neither
                 possible nor particularly advantageous to the IDF, given that not all tunnels are of equal importance.
                 <br/><br/>
-                In terms of Israel’s goal of completely eliminating the ideology of Hamas, overwhelming airstrikes may
-                actually have the opposite effect. As stated by Israeli army spokesperson Daniel Hagari: "Hamas is a
+                In terms of Israel&apos;s goal of completely eliminating the ideology of Hamas, overwhelming airstrikes may
+                actually have the opposite effect. As stated by Israeli army spokesperson Daniel Hagari: &quot;Hamas is a
                 political party, it is the Muslim Brotherhood, and it has been a group present in the region for years
-                and planted in the hearts of people … you cannot destroy an idea; at the political level [Netanyahu's
-                government], they must find an alternative to that, or else it will remain.”
+                and planted in the hearts of people … you cannot destroy an idea; at the political level [Netanyahu&apos;s
+                government], they must find an alternative to that, or else it will remain.&quot;
             </div>
             <div>
                 <Text className="text-2xl font-bold pb-3">What tactics does Hamas use to evade airstrikes?</Text>
                 There have been numerous accounts of Hamas using civilian structures to hide its military operations.
                 The use of tunnels is possibly the most egregious example, given that they run underneath much of the
-                Gaza Strip, which is home to over 2.1 million people. However, it’s much more difficult to find
+                Gaza Strip, which is home to over 2.1 million people. However, it&apos;s much more difficult to find
                 statistics of how often Hamas uses civilian structures generally, which makes it impossible to
                 extrapolate further.
                 <br/><br/>
@@ -111,27 +111,27 @@ export default function HeatMapGeneral() {
                     How have Israeli airstrikes affected life for Palestinians in the Gaza Strip?
                 </Text>
                 Airstrikes have been devastating for Gazans. Aside from causing over 45,000
-                casualties, the damage to Gaza’s infrastructure is enormous. All of Gaza’s universities have been
+                casualties, the damage to Gaza&apos;s infrastructure is enormous. All of Gaza&apos;s universities have been
                 destroyed, in addition to most elementary and high school buildings. Most farmland is damaged. Important
                 religious sites and historical sites have been destroyed, such as the Grand Mosque of Gaza.
-                Only half of Gaza’s hospitals are still operational — leaving only 2,000 beds
+                Only half of Gaza&apos;s hospitals are still operational — leaving only 2,000 beds
                 for a population of over 2 million people. As
                 a result, many patients have been left to die or are forced to undergo treatment under inhumane
-                conditions, such as having limbs amputated without anesthesia. Paired with Israel’s blockade, the
+                conditions, such as having limbs amputated without anesthesia. Paired with Israel&apos;s blockade, the
                 destruction of critical infrastructure in the Gaza Strip has allowed disease and starvation to ravage
                 its inhabitants.
                 <br/><br/>
-                What’s more, the stress of living in an area constantly bombarded by airstrikes exacts a heavy mental
+                What&apos;s more, the stress of living in an area constantly bombarded by airstrikes exacts a heavy mental
                 toll on Gazans — especially on children. According to a 2019 report by Save the Children, almost 8 out
                 of 10 children in the Gaza Strip said that their greatest fear was the noise of aircraft and being
                 bombed. Civilians, even if not personally injured or killed, are forced to reckon daily with the
                 consequences of Israeli airstrikes. Journalist Hind Khoudary recounted a moment from the Oct. 13th
                 evacuation from northern Gaza:
                 <br/><br/>
-                “We kept walking. As we walked, pushing each other, we saw bombed cars and dead bodies inside the cars.
-                Flies filled the cars, feasting on the blood and the bodies inside.”
+                &quot;We kept walking. As we walked, pushing each other, we saw bombed cars and dead bodies inside the cars.
+                Flies filled the cars, feasting on the blood and the bodies inside.&quot;
                 <br/><br/>
-                While the IDF’s airstrikes have killed tens of thousands of Palestinians, their true cost extends far
+                While the IDF&apos;s airstrikes have killed tens of thousands of Palestinians, their true cost extends far
                 beyond what can be measured.
             </div>
         </div>

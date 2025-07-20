@@ -13,7 +13,7 @@ export default function Timeline({ events, ...props }) {
     return (
         <div {...props} className="flex flex-col space-y-3">
             {events.map(({ date: eventDate, label, onClick }, index) => (
-                <div className="grid grid-cols-[75px_40px_1fr] gap-x-3">
+                <div className="grid grid-cols-[75px_40px_1fr] gap-x-3" key={eventDate}>
                     <Text className="whitespace-nowrap">{dayjs(eventDate).format('MMM. Do')}</Text>
                     <div className="flex flex-col items-center">
                         <button
