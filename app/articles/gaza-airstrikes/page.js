@@ -9,6 +9,8 @@ import PrefaceHistorySection from "@/app/articles/gaza-airstrikes/sections/prefa
 import AirstrikesGeneralSection from "@/app/articles/gaza-airstrikes/sections/airstrikes-general-section";
 import PrefaceAnalysisSection from "@/app/articles/gaza-airstrikes/sections/preface-analysis-section";
 import PrefaceStrikesSection from "@/app/articles/gaza-airstrikes/sections/preface-strikes-section";
+import HeatMapGeneralSection from "@/app/articles/gaza-airstrikes/sections/heatmap-general-section";
+import SourcesSection from "@/app/articles/gaza-airstrikes/sections/sources-section";
 
 export default function GazaAirstrikes() {
     return (
@@ -17,29 +19,27 @@ export default function GazaAirstrikes() {
                 <Text className="text-5xl font-bold">Gaza&apos;s Airstrikes, Visualized</Text>
             </header>
             <section className="grid grid-cols-2">
-                <PrefaceHistorySection />
+                <PrefaceHistorySection/>
             </section>
             <section className="grid grid-cols-2">
-                <PrefaceStrikesSection />
+                <PrefaceStrikesSection/>
             </section>
             <section className="grid grid-cols-2">
-                <PrefaceAnalysisSection />
+                <PrefaceAnalysisSection/>
             </section>
             <section className="grid grid-cols-2">
-                <AirstrikesGeneralSection />
+                <AirstrikesGeneralSection/>
             </section>
             <section className="w-full flex justify-center items-center">
                 <div className="w-3/4">
-                    <Numbers/>
+                    <Numbers />
                 </div>
             </section>
             <section className="grid grid-cols-2">
-                <PrefaceHistory />
-                <div className="flex justify-center">
-                    <div className="w-[90%] sticky top-[0lvh] h-lvh pt-[10lvh]">
-                        <HeatMap/>
-                    </div>
-                </div>
+                <HeatMapGeneralSection />
+            </section>
+            <section>
+                <SourcesSection />
             </section>
         </div>
     );
