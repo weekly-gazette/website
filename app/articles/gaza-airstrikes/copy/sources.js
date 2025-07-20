@@ -71,7 +71,7 @@ export default function Sources() {
             <li><Link
                 href="https://www.fdd.org/analysis/2024/02/12/hamas-data-center-found-under-unrwa-headquarters/">FDD
                     – Hamas Data Center Under UNRWA</Link></li>
-            <li><Link href="https://x.com/UNLazzarini/status/1756377920254218556">Twitter/X – UNRWA Commissioner
+            <li><Link href="https://x.com/UNLazzarini/status/1756377920254218556">X – UNRWA Commissioner
                     Lazzarini</Link></li>
             <li><Link href="https://stratcomcoe.org/cuploads/pfiles/hamas_human_shields.pdf?ref=quillette.com">StratComCOE
                     – Hamas Human Shields PDF</Link></li>
