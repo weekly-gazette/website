@@ -1,8 +1,4 @@
 "use client";
-import React from "react";
-import PrefaceHistory from './copy/preface-history';
-import LineGraph from '@/app/articles/gaza-airstrikes/media/line-graph';
-import HeatMap from '@/app/articles/gaza-airstrikes/media/heat-map';
 import Numbers from '@/app/articles/gaza-airstrikes/media/numbers';
 import Text from "@/components/text";
 import PrefaceHistorySection from "@/app/articles/gaza-airstrikes/sections/preface-history-section";
@@ -15,11 +11,12 @@ import SourcesSection from "@/app/articles/gaza-airstrikes/sections/sources-sect
 export default function GazaAirstrikes() {
     return (
         <div className="h-[100vh] overflow-scroll bg-black text-white">
-            <header className="px-10 pt-10 pb-5">
-                <Text className="text-5xl font-bold">Gaza&apos;s Airstrikes, Visualized</Text>
+            <header className="px-10 h-lvh flex flex-col items-center justify-center bg-[url(/gaza-cover.png)] bg-cover bg-center mask-b-from-75%">
+                <Text className="text-5xl font-bold pb-5">Israel&apos;s Airstrikes on Gaza, Visualized</Text>
+                <Text className="text-xl font-medium">How airstrikes have decimated the Gaza Strip</Text>
             </header>
             <section className="grid grid-cols-2">
-                <PrefaceHistorySection/>
+                <PrefaceHistorySection />
             </section>
             <section className="grid grid-cols-2">
                 <PrefaceStrikesSection/>
@@ -32,14 +29,14 @@ export default function GazaAirstrikes() {
             </section>
             <section className="w-full flex justify-center items-center">
                 <div className="w-3/4">
-                    <Numbers />
+                    <Numbers/>
                 </div>
             </section>
             <section className="grid grid-cols-2">
-                <HeatMapGeneralSection />
+                <HeatMapGeneralSection/>
             </section>
             <section>
-                <SourcesSection />
+                <SourcesSection/>
             </section>
         </div>
     );

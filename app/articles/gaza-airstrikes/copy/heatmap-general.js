@@ -19,7 +19,7 @@ export default function HeatMapGeneral() {
                 cities, for example, Mohammed Deif in Khan Younis — who was one of the founders of the al-Qassam
                 Brigades. However, the IDF has also targeted sites like refugee camps in Jabalia and thousands of
                 residential buildings, indicating their goal of simultaneously expelling Palestinian civilians whilst
-                encouraging them to exert pressure on Hamas. According to the +972 magazine, about 50% of the IDF’s
+                encouraging them to exert pressure on Hamas. According to the +972 Magazine, about 50% of the IDF’s
                 targets in the first five days after Oct. 7th were public infrastructure and civilian residences.
                 <br/><br/>
                 Airstrikes are also used in lieu of ground invasions in order to prevent IDF casualties. IDF officials
@@ -110,11 +110,12 @@ export default function HeatMapGeneral() {
                 <Text className="text-2xl font-bold pb-3">
                     How have Israeli airstrikes affected life for Palestinians in the Gaza Strip?
                 </Text>
-                Airstrikes have been devastating for Gazans. Aside from causing tens of thousands of civilian
+                Airstrikes have been devastating for Gazans. Aside from causing over 45,000
                 casualties, the damage to Gaza’s infrastructure is enormous. All of Gaza’s universities have been
-                destroyed, in addition to most elementary and high school buildings. Most farmland is damaged. Religious
-                sites and historical sites have been destroyed, such as the Grand Mosque of Gaza. Only half of Gaza’s
-                hospitals are still operational — leaving only 2,000 beds for a population of over 2 million people. As
+                destroyed, in addition to most elementary and high school buildings. Most farmland is damaged. Important
+                religious sites and historical sites have been destroyed, such as the Grand Mosque of Gaza.
+                Only half of Gaza’s hospitals are still operational — leaving only 2,000 beds
+                for a population of over 2 million people. As
                 a result, many patients have been left to die or are forced to undergo treatment under inhumane
                 conditions, such as having limbs amputated without anesthesia. Paired with Israel’s blockade, the
                 destruction of critical infrastructure in the Gaza Strip has allowed disease and starvation to ravage
@@ -123,8 +124,9 @@ export default function HeatMapGeneral() {
                 What’s more, the stress of living in an area constantly bombarded by airstrikes exacts a heavy mental
                 toll on Gazans — especially on children. According to a 2019 report by Save the Children, almost 8 out
                 of 10 children in the Gaza Strip said that their greatest fear was the noise of aircraft and being
-                bombed. Civilians, even if not personally injured, are forced to reckon with the consequences of Israeli
-                airstrikes at all times. Journalist Hind Khoudary recounted the Oct. 13th evacuation from northern Gaza:
+                bombed. Civilians, even if not personally injured or killed, are forced to reckon daily with the
+                consequences of Israeli airstrikes. Journalist Hind Khoudary recounted a moment from the Oct. 13th
+                evacuation from northern Gaza:
                 <br/><br/>
                 “We kept walking. As we walked, pushing each other, we saw bombed cars and dead bodies inside the cars.
                 Flies filled the cars, feasting on the blood and the bodies inside.”

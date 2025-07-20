@@ -20,8 +20,8 @@ export default function AirstrikesGeneral() {
         { date: '10-06-2024', label: "Israel issues mass evacuation order of over 300,000 Palestinians from northern Gaza, Khan Younis, and Rafah (located in southern Gaza) to the Al-Mawasi humanitarian zone in southern Gaza." },
         { date: '01-19-2025', label: "Israel and Hamas agree to a ceasefire and hostage-and-prisoner exchanges, mediated by Egypt, Qatar, and the United States. Both Israel and Hamas violate the ceasefire by intermittently launching airstrikes at each other." },
         { date: '03-18-2025', label: "Israel launches surprise airstrikes on the Gaza Strip, killing 400 Palestinians and formally ending the ceasefire." },
-        { date: '06-29-2025', label: "Israel issues evacuation orders of northern Gaza (Gaza City, Jabalia) to southern Gaza." },
-        { date: '07-16-2025', label: "Israel again issues orders to residents in northern Gaza to evacuate to Al-Mawasi in southern Gaza, despite worsening conditions in Al-Mawasi." }
+        // { date: '06-29-2025', label: "Israel issues evacuation orders of northern Gaza (Gaza City, Jabalia) to southern Gaza." },
+        // { date: '07-16-2025', label: "Israel again issues orders to residents in northern Gaza to evacuate to Al-Mawasi in southern Gaza, despite worsening conditions in Al-Mawasi." }
     ];
 
     const organizedEvents = Object.entries(events.reduce((acc, curr) => {
