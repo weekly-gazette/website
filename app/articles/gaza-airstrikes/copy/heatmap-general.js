@@ -94,7 +94,7 @@ export default function HeatMapGeneral() {
                 <br/><br/>
                 One notable case occurred in 2014, when a Hamas data center was found underneath an UNRWA facility.
                 Additionally, there are reports of Hamas firing rockets from civilian locations, dressing in
-                plainclothes to avoid detection, and using schools to store weapons. On Oct. 13th, after Israel issued
+                plainclothes to avoid detection, and using schools to store weapons. On Oct. 13th, 2023, after Israel issued
                 an evacuation order of northern Gaza, Hamas put up roadblocks and instructed civilians not to leave.
                 Despite this, hundreds of thousands of Palestinians still fled within the first few several days of the
                 order. While the IDF is responsible for each of its airstrikes, Hamas has also contributed to putting
