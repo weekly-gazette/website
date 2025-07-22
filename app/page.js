@@ -27,7 +27,6 @@ const articles = [
   },
 ];
 
-// TODO: Escape apostrophe
 const interactiveReporting = [
   {
     title: "Gaza's Airstrikes, Visualized",
@@ -42,10 +41,9 @@ const tools = ([
   },
 ]);
 
-
 export default function Home() {
   return (
-      <div className="flex flex-col p-10 font-[family-name:var(--font-geist-sans)]">
+      <div className="flex flex-col p-10 bg-black min-h-lvh text-white">
         <main className="flex flex-col gap-y-10">
           <section>
             <header className="font-bold text-5xl">The Weekly Gazette</header>

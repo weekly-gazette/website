@@ -7,6 +7,7 @@ import PrefaceAnalysisSection from "@/app/articles/gaza-airstrikes/sections/pref
 import PrefaceStrikesSection from "@/app/articles/gaza-airstrikes/sections/preface-strikes-section";
 import HeatMapGeneralSection from "@/app/articles/gaza-airstrikes/sections/heatmap-general-section";
 import SourcesSection from "@/app/articles/gaza-airstrikes/sections/sources-section";
+import Link from "@/components/link";
 
 export default function GazaAirstrikes() {
     return (
@@ -15,6 +16,10 @@ export default function GazaAirstrikes() {
                 <Text className="text-5xl font-bold pb-5">Israel&apos;s Airstrikes on Gaza, Visualized</Text>
                 <Text className="text-xl font-medium">How airstrikes have decimated the Gaza Strip</Text>
             </header>
+            <Text className="pt-5 px-10 italic">
+                Our journalism is fully funded by our readers. To be added to our mailing list or to support us,
+                you can subscribe <Link className="text-orange-300 hover:text-orange-400" href="https://weeklygazette.substack.com/subscribe">here</Link>.
+            </Text>
             <section className="grid grid-cols-1 lg:grid-cols-2">
                 <PrefaceHistorySection />
             </section>
