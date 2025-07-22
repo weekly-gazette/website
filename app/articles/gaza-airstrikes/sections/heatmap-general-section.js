@@ -6,7 +6,7 @@ export default function HeatMapGeneralSection() {
         <>
             <HeatMapGeneral />
             <div className="flex justify-center">
-                <div className="w-[90%] sticky top-[0lvh] h-lvh pt-[10lvh]">
+                <div className="w-[90%] sticky top-[0lvh] lg:h-lvh lg:pt-[10lvh]">
                     <HeatMap />
                 </div>
             </div>
