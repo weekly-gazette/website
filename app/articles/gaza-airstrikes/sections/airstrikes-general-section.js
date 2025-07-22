@@ -1,3 +1,4 @@
+"use client";
 import 'maplibre-gl/dist/maplibre-gl.css';
 import AirstrikesGeneral from "@/app/articles/gaza-airstrikes/copy/airstrikes-general";
 import Map from "@/app/articles/gaza-airstrikes/media/map";

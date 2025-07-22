@@ -1,3 +1,4 @@
+"use client";
 import { Map as ReactMap, FullscreenControl, NavigationControl, Source, Layer } from "@vis.gl/react-maplibre";
 import React from "react";
 import gazaData from '@/constants/geojson-airstrikes-dataset.json';

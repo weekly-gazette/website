@@ -1,3 +1,4 @@
+"use client";
 import { Line } from "react-chartjs-2";
 import React from "react";
 import cumulativeGazaData from "@/constants/cumulative-airstrikes-dataset.json";

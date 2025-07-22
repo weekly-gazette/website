@@ -1,4 +1,3 @@
-"use client";
 import Numbers from '@/app/articles/gaza-airstrikes/media/numbers';
 import Text from "@/components/text";
 import PrefaceHistorySection from "@/app/articles/gaza-airstrikes/sections/preface-history-section";
@@ -8,6 +7,11 @@ import PrefaceStrikesSection from "@/app/articles/gaza-airstrikes/sections/prefa
 import HeatMapGeneralSection from "@/app/articles/gaza-airstrikes/sections/heatmap-general-section";
 import SourcesSection from "@/app/articles/gaza-airstrikes/sections/sources-section";
 import Link from "@/components/link";
+
+export const metadata = {
+    title: 'Israel\'s Airstrikes in Gaza',
+    description: 'How airstrikes have destroyed the Gaza Strip',
+}
 
 export default function GazaAirstrikes() {
     return (

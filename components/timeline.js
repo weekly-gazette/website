@@ -1,3 +1,4 @@
+"use client";
 import Text from "@/components/text";
 import dayjs from "dayjs";
 import advancedFormat from "dayjs/plugin/advancedFormat";
