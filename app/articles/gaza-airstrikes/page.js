@@ -15,16 +15,16 @@ export default function GazaAirstrikes() {
                 <Text className="text-5xl font-bold pb-5">Israel&apos;s Airstrikes on Gaza, Visualized</Text>
                 <Text className="text-xl font-medium">How airstrikes have decimated the Gaza Strip</Text>
             </header>
-            <section className="grid grid-cols-2">
+            <section className="grid grid-cols-1 lg:grid-cols-2">
                 <PrefaceHistorySection />
             </section>
-            <section className="grid grid-cols-2">
+            <section className="grid grid-cols-1 lg:grid-cols-2">
                 <PrefaceStrikesSection/>
             </section>
-            <section className="grid grid-cols-2">
+            <section className="grid grid-cols-1 lg:grid-cols-2">
                 <PrefaceAnalysisSection/>
             </section>
-            <section className="grid grid-cols-2">
+            <section className="grid grid-cols-1 lg:grid-cols-2">
                 <AirstrikesGeneralSection/>
             </section>
             <section className="w-full flex justify-center items-center">
@@ -32,7 +32,7 @@ export default function GazaAirstrikes() {
                     <Numbers/>
                 </div>
             </section>
-            <section className="grid grid-cols-2">
+            <section className="grid grid-cols-1 lg:grid-cols-2">
                 <HeatMapGeneralSection/>
             </section>
             <section>
