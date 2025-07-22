@@ -16,7 +16,7 @@ export default function GazaAirstrikes() {
                 <Text className="text-5xl font-bold pb-5">Israel&apos;s Airstrikes on Gaza, Visualized</Text>
                 <Text className="text-xl font-medium">How airstrikes have decimated the Gaza Strip</Text>
             </header>
-            <Text className="pt-5 px-10 italic">
+            <Text className="pt-10 px-10 italic text-lg">
                 Our journalism is fully funded by our readers. To be added to our mailing list or to support us,
                 you can subscribe <Link className="text-orange-300 hover:text-orange-400" href="https://weeklygazette.substack.com/subscribe">here</Link>.
             </Text>
