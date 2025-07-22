@@ -35,15 +35,6 @@ export default function LineGraph() {
                     color: 'white',
                 },
             },
-            title: {
-                display: true,
-                text: 'Casualties and Airstrikes in Gaza Since Oct. 2023',
-                color: 'white',
-                font: {
-                    size: 20,
-                    weight: 'bold',
-                }
-            },
         },
         scales: {
             x: {
