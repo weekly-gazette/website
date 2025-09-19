@@ -2,10 +2,6 @@ import Link from "@/components/link";
 
 const articles = [
   {
-    title: "The Monster Chicken in the Room",
-    link: "https://weeklygazette.substack.com/p/the-monster-chicken-in-the-room",
-  },
-  {
     title: "Jordan's Black Refugees",
     link: "https://weeklygazette.substack.com/p/jordans-black-refugees",
   },
