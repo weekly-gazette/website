@@ -65,16 +65,16 @@ export default function Home() {
               ))}
             </ol>
           </section>
-          <section>
-            <header className="font-bold pb-1 text-3xl">Tools</header>
-            <ol className="text-xl">
-              {tools.map(({title, link}) => (
-                  <li key={title}>
-                    <Link className="hover:text-orange-300" href={link}>{title}</Link>
-                  </li>
-              ))}
-            </ol>
-          </section>
+          {/*<section>*/}
+          {/*  <header className="font-bold pb-1 text-3xl">Tools</header>*/}
+          {/*  <ol className="text-xl">*/}
+          {/*    {tools.map(({title, link}) => (*/}
+          {/*        <li key={title}>*/}
+          {/*          <Link className="hover:text-orange-300" href={link}>{title}</Link>*/}
+          {/*        </li>*/}
+          {/*    ))}*/}
+          {/*  </ol>*/}
+          {/*</section>*/}
           <section>
             <header className="font-bold text-3xl">About us</header>
             <ol className="text-xl">
